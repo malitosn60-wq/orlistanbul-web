@@ -64,7 +64,7 @@ export default function Footer() {
         
         {/* Alt kısım - Copyright */}
         <div className="mt-8 border-t border-gray-700 pt-4 text-center text-gray-400 text-sm">
-          © 2025 Tüm Hakları Saklıdır.
+          © 2025 ORL İstanbul. Tüm hakları saklıdır.
         </div>
       </div>
     </footer>

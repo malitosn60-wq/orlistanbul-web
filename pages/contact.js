@@ -34,7 +34,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 text-gray-900 pt-24">
+    <div className="min-h-screen bg-gray-100 text-gray-900 pt-16">
       {/* Harita */}
       <section className="w-full h-[400px] md:h-[500px] overflow-hidden shadow-lg">
         <iframe
