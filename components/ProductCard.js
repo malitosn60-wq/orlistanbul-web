@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProductCard({ name, image, description, logo, showButton = false, externalLink }) {
@@ -35,11 +36,11 @@ export default function ProductCard({ name, image, description, logo, showButton
       </div>
 
       {showButton && !externalLink && (
-        <a href="/urunler">
+        <Link href="/urunler">
           <button className="mt-4 bg-sky-900 text-white px-6 py-2 rounded-full hover:bg-sky-800 transition transform hover:scale-105 shadow-md">
             İncele
           </button>
-        </a>
+        </Link>
       )}
     </div>
   );
