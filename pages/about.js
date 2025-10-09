@@ -4,46 +4,49 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
       {/* HERO */}
-      <section className="w-full pt-20 h-[600px] md:h-[750px] bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#60a5fa] flex flex-col md:flex-row items-center justify-center relative px-8 overflow-hidden">
-  {/* Sol metin */}
-  <div className="md:w-1/2 flex flex-col justify-center items-start z-10 md:pl-12">
-    {/* Logo */}
+      <section className="w-full pt-12 h-[600px] md:h-[750px] bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#60a5fa] flex flex-col md:flex-row items-center justify-center relative px-8 overflow-hidden">
+        {/* Sol metin */}
+        <div className="md:w-1/2 flex flex-col justify-center items-start z-10 md:pl-12">
+          {/* Logo */}
 
-    <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
-      Hakkımızda
-    </h1>
-    <p className="text-gray-200 text-lg md:text-xl w-full mb-6">
-      ORL İstanbul olarak sizlere işitmede kaliteyi ve son teknolojiyi sunuyoruz.
-    </p>
-    <a href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-      Bize Ulaşın
-    </a>
-  </div>
+          <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
+            Hakkımızda
+          </h1>
+          <p className="text-gray-200 text-lg md:text-xl w-full mb-6">
+            ORL İstanbul olarak sizlere işitmede kaliteyi ve son teknolojiyi sunuyoruz.
+          </p>
+          <a href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            Bize Ulaşın
+          </a>
+        </div>
 
-  {/* Sağ görsel */}
-  <div className="md:w-1/2 flex justify-center items-center relative mt-8 md:mt-0">
-    <img
-      src="/hakkimizda1.jpg"
-      className="w-full max-w-md md:max-w-lg h-auto object-contain rounded-2xl shadow-2xl"
-      alt="Ekip Görseli"
-    />
-  </div>
+        {/* Sağ görsel */}
+        <div className="md:w-1/2 flex justify-center items-center relative mt-8 md:mt-0">
+          <img
+            src="/hakkimizda1.jpg"
+            className="w-full max-w-md md:max-w-lg h-auto object-contain rounded-2xl shadow-2xl"
+            alt="Ekip Görseli"
+          />
+        </div>
 
-  {/* Arka plan efektleri */}
-  <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
-    <div className="w-72 h-72 bg-white rounded-full opacity-10 absolute -top-20 -left-20 animate-pulse"></div>
-    <div className="w-96 h-96 bg-white rounded-full opacity-5 absolute -bottom-32 -right-32 animate-pulse"></div>
-  </div>
-</section>
+        {/* Arka plan efektleri */}
+        <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
+          {/* Sol üst ışık */}
+          <div className="w-32 h-32 sm:w-48 sm:h-48 md:w-72 md:h-72 bg-sky-500 rounded-full opacity-10 absolute -top-10 sm:-top-16 md:-top-20 -left-10 sm:-left-16 md:-left-20 animate-pulse"></div>
+
+          {/* Sağ alt ışık */}
+          <div className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-sky-500 rounded-full opacity-5 absolute -bottom-16 sm:-bottom-24 md:-bottom-32 -right-16 sm:-right-24 md:-right-32 animate-pulse"></div>
+        </div>
+      </section>
 
       {/* Kurumsal Bilgi */}
       <section className="py-16 px-4 md:px-12 flex flex-col md:flex-row items-center justify-center gap-12">
         <div className="md:w-1/2">
-          <Image 
-            src="/orl-istanbul-kartvizit.png" 
-            alt="Ekip Görseli" 
-            width={500} 
-            height={400} 
+          <Image
+            src="/orl-istanbul-kartvizit.png"
+            alt="Ekip Görseli"
+            width={500}
+            height={400}
             className="rounded-2xl shadow-2xl object-cover"
           />
         </div>

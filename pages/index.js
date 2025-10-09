@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* HERO */}
       <section className="relative w-full h-[500px] sm:h-[600px] md:h-[750px] flex items-center justify-center overflow-hidden">
-        <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover"  src="/resounddd_kkP4HwCl.mp4" />
+        <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover"  src="/resounddd_mp4.mp4" />
         <div className="absolute w-full h-full bg-gradient-to-r from-[#0f172a]/70 via-[#1e3a8a]/60 to-[#60a5fa]/50 top-0 left-0"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-start justify-center w-full px-6 md:px-12">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start">

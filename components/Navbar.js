@@ -13,10 +13,10 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "Ana Sayfa", href: "/", icon: <FaHome /> },
-    { name: "Hakkımızda", href: "/about", icon: <FaInfoCircle /> },
-    { name: "Hizmetler", href: "/services", icon: <FaHandsHelping /> },
+    { name: "Hakkımızda", href: "/hakkimizda", icon: <FaInfoCircle /> },
+    { name: "Hizmetler", href: "/hizmetler", icon: <FaHandsHelping /> },
     { name: "Markalar & Ürünlerimiz", href: "/urunler", icon: <FaBoxes /> },
-    { name: "İletişim", href: "/contact", icon: <FaPhone /> },
+    { name: "İletişim", href: "/iletisim", icon: <FaPhone /> },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Navbar() {
           />
         </Link>
 
-        {/* Masaüstü menü (890px ve üstü) */}
+        {/* Masaüstü menü */}
         <div className="flex space-x-2 lg:space-x-4 max-[890px]:hidden">
           {menuItems.map((item) => (
             <Link key={item.name} href={item.href}>
@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Hamburger menü butonu (890px altı) */}
+        {/* Hamburger menü */}
         <button
           onClick={() => setOpen(!open)}
           className="hidden max-[890px]:flex flex-col justify-center items-center w-8 h-8 relative z-[60]"
@@ -65,7 +65,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobil menü (logo altına açılır) */}
+      {/* Mobil menü */}
       <div
         className={`absolute top-full left-0 w-full bg-white flex flex-col items-center overflow-hidden transition-all duration-300 ${
           open ? "max-h-[500px] py-4 shadow-lg" : "max-h-0 py-0"

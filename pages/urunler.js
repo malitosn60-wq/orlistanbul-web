@@ -2,12 +2,12 @@ import ProductCard from "../components/ProductCard";
 import Link from "next/link";
 
 const products = [
-  { slug: "ReSound Key", name: "ReSound Key", image: "/MR9fWZrs.webp", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://resound.com" },
-  { slug: "ReSound Quattro", name: "ReSound Quattro", image: "/recharge-subpage_1350x1000-case-design.jpg", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://resound.com" },
-  { slug: "ReSound Enzo", name: "ReSound Enzo", image: "/resound_enzo.jpg", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://resound.com" },
-  { slug: "ReSound Vivia", name: "ReSound Vivia", image: "/RS_Vi_ProductStill_NavyBlue_500px.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://resound.com" },
-  { slug: "Resound Savi", name: "Resound Savi", image: "/Resound Savi.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://danavox.com" },
-  { slug: "Respound Omnia", name: "Resound Omnia", image: "/RS_OMNIA_mini_RIE60_RHI_Sparkling_Silver.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://danavox.com" },
+  { slug: "ReSound Key", name: "ReSound Key", image: "/MR9fWZrs.webp", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://www.resound.com/tr-tr/hearing-aids/resound-hearing-aids/resound-key" },
+  { slug: "ReSound Quattro", name: "ReSound Quattro", image: "/recharge-subpage_1350x1000-case-design.jpg", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://www.resound.com/tr-tr/hearing-aids/resound-hearing-aids/quattro" },
+  { slug: "ReSound Enzo", name: "ReSound Enzo", image: "/resound_enzo.jpg", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://www.resound.com/tr-tr/hearing-aids/resound-hearing-aids/enzo-q" },
+  { slug: "ReSound Vivia", name: "ReSound Vivia", image: "/RS_Vi_ProductStill_NavyBlue_500px.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://www.resound.com/tr-tr/hearing-aids/resound-hearing-aids/resound-vivia" },
+  { slug: "Resound Savi", name: "Resound Savi", image: "/Resound Savi.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://www.resound.com/en/hearing-aids/resound-hearing-aids/resound-savi" },
+  { slug: "Respound Omnia", name: "Resound Omnia", image: "/RS_OMNIA_mini_RIE60_RHI_Sparkling_Silver.png", logo: "/ReSound+Logo+NO+BG-640w.webp", externalLink: "https://pro.resound.com/en-us/products/hearing-aids/omnia" },
 
 ];
 
