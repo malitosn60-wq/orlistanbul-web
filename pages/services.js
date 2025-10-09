@@ -1,49 +1,18 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hizmetler() {
   const services = [
-    {
-      title: "Slim Tüp Montaj",
-      icon: "/slimtüp.png",
-    },
-    {
-      title: "Kulak İçi Montaj",
-      icon: "/kulakicimontaj.jpeg",
-    },
-    {
-      title: "Reciver Montaj",
-      icon: "/Recivermontaj.jpeg",
-    },
-    {
-      title: "Bipolar Kalıp",
-      icon: "/Bipolarkalıp.jpeg",
-    },
-     {
-      title: "Sert Kalıp",
-      icon: "/Sertkalıp.jpeg",
-    },
-     {
-      title: "Genel Bakım",
-      icon: "/Genelbakım.jpeg",
-    },
-     {
-      title: "Boynuz Değişimi",
-      icon: "/Boynuz.jpeg",
-    },
-     {
-      title: "Hortum Değişimi",
-      icon: "/Hortum3.png" ,
-      
-      
-    },
-     {
-      title: "Filtre",
-      icon: "/Filtre.jpeg",
-    },
-     {
-      title: "Pil Kapağı",
-      icon: "/PilKapağı.jpeg",
-    },
+    { title: "Slim Tüp Montaj", icon: "/slimtüp.png" },
+    { title: "Kulak İçi Montaj", icon: "/kulakicimontaj.jpeg" },
+    { title: "Reciver Montaj", icon: "/Recivermontaj.jpeg" },
+    { title: "Bipolar Kalıp", icon: "/Bipolarkalıp.jpeg" },
+    { title: "Sert Kalıp", icon: "/Sertkalıp.jpeg" },
+    { title: "Genel Bakım", icon: "/Genelbakım.jpeg" },
+    { title: "Boynuz Değişimi", icon: "/Boynuz.jpeg" },
+    { title: "Hortum Değişimi", icon: "/Hortum3.png" },
+    { title: "Filtre", icon: "/Filtre.jpeg" },
+    { title: "Pil Kapağı", icon: "/PilKapağı.jpeg" },
   ];
 
   return (
@@ -83,9 +52,9 @@ export default function Hizmetler() {
         <p className="text-center max-w-2xl mb-6">
           Hizmetlerimiz hakkında detaylı bilgi almak ve cihazlarımızı deneyimlemek için bizimle iletişime geçin.
         </p>
-        <a href="/contact" className="bg-white text-sky-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        <Link href="/contact" className="bg-white text-sky-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
           Bize Ulaşın
-        </a>
+        </Link>
       </section>
     </div>
   );

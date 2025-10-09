@@ -1,5 +1,7 @@
+"use client";
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import {
   FaHome,
   FaInfoCircle,
@@ -24,18 +26,19 @@ export default function Navbar() {
       <div className="flex justify-between items-center px-4 lg:px-8 py-3 relative">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img
+          <Image
             src="/orl-istanbul-kartvizit.png"
             alt="Logo"
-            className="w-28 lg:w-32 cursor-pointer"
+            width={128}
+            height={128}
           />
         </Link>
 
         {/* Masaüstü menü */}
-        <div className="flex space-x-2 lg:space-x-4 max-[890px]:hidden">
+        <div className="hidden lg:flex space-x-4">
           {menuItems.map((item) => (
             <Link key={item.name} href={item.href}>
-              <button className="flex items-center gap-2 px-3 lg:px-4 py-2 border border-gray-300 rounded-lg hover:bg-sky-50 transition">
+              <button className="flex items-center gap-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-sky-50 transition">
                 {item.icon} {item.name}
               </button>
             </Link>
@@ -45,7 +48,7 @@ export default function Navbar() {
         {/* Hamburger menü */}
         <button
           onClick={() => setOpen(!open)}
-          className="hidden max-[890px]:flex flex-col justify-center items-center w-8 h-8 relative z-[60]"
+          className="flex lg:hidden flex-col justify-center items-center w-8 h-8 relative z-[60]"
         >
           <span
             className={`block w-6 h-0.5 bg-sky-800 transition-transform duration-300 ${
@@ -69,7 +72,7 @@ export default function Navbar() {
       <div
         className={`absolute top-full left-0 w-full bg-white flex flex-col items-center overflow-hidden transition-all duration-300 ${
           open ? "max-h-[500px] py-4 shadow-lg" : "max-h-0 py-0"
-        } max-[890px]:flex hidden`}
+        } lg:hidden`}
       >
         {menuItems.map((item) => (
           <Link key={item.name} href={item.href} className="w-full px-6">

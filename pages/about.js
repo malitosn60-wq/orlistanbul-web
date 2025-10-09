@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -7,23 +8,23 @@ export default function About() {
       <section className="w-full pt-12 h-[600px] md:h-[750px] bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#60a5fa] flex flex-col md:flex-row items-center justify-center relative px-8 overflow-hidden">
         {/* Sol metin */}
         <div className="md:w-1/2 flex flex-col justify-center items-start z-10 md:pl-12">
-          {/* Logo */}
-
           <h1 className="text-3xl md:text-5xl font-bold text-white mb-4 leading-snug">
             Hakkımızda
           </h1>
           <p className="text-gray-200 text-lg md:text-xl w-full mb-6">
             ORL İstanbul olarak sizlere işitmede kaliteyi ve son teknolojiyi sunuyoruz.
           </p>
-          <a href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+          <Link href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
             Bize Ulaşın
-          </a>
+          </Link>
         </div>
 
         {/* Sağ görsel */}
         <div className="md:w-1/2 flex justify-center items-center relative mt-8 md:mt-0">
-          <img
+          <Image
             src="/hakkimizda1.jpg"
+            width={600}
+            height={400}
             className="w-full max-w-md md:max-w-lg h-auto object-contain rounded-2xl shadow-2xl"
             alt="Ekip Görseli"
           />
@@ -47,7 +48,7 @@ export default function About() {
             alt="Ekip Görseli"
             width={500}
             height={400}
-            className="rounded-2xl shadow-2xl object-cover"
+            className="rounded-2xl p-6 shadow-2xl object-cover"
           />
         </div>
         <div className="md:w-1/2 flex flex-col gap-6">
@@ -86,9 +87,9 @@ export default function About() {
         <p className="text-center max-w-2xl mb-6">
           Merkezimizden randevu alabilir ve cihazlarımızı ücretsiz deneyebilirsiniz.
         </p>
-        <a href="/contact" className="bg-white text-sky-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        <Link href="/contact" className="bg-white text-sky-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
           Bize Ulaşın
-        </a>
+        </Link>
       </section>
     </div>
   );

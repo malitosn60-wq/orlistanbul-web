@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { FaFacebookF, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -11,10 +12,11 @@ export default function Footer() {
           
           {/* Sol taraf - Logo ve açıklama */}
           <div>
-            <img
+            <Image
               src="/orl-istanbul-kartvizit.png"
               alt="ORL İstanbul İşitme Cihazları Logo"
-              className="w-32"
+              width={128}
+              height={128}
             />
             <p className="mt-3 text-gray-400 leading-relaxed">
               İşitme cihazları ve aksesuarlarında kaliteli çözümler sunuyoruz.  

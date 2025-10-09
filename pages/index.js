@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import Image from "next/image";
+import Link from "next/link";
 
 const products = [
   { id: 1, name: "Resound Enzo", image: "/resound_enzo.jpg" },
@@ -53,10 +55,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900">
-
       {/* HERO */}
       <section className="relative w-full h-[500px] sm:h-[600px] md:h-[750px] flex items-center justify-center overflow-hidden">
-        <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover"  src="/resounddd_mp4.mp4" />
+        <video autoPlay loop muted playsInline className="absolute w-full h-full object-cover" src="/resounddd_mp4.mp4" />
         <div className="absolute w-full h-full bg-gradient-to-r from-[#0f172a]/70 via-[#1e3a8a]/60 to-[#60a5fa]/50 top-0 left-0"></div>
         <div className="relative z-10 flex flex-col md:flex-row items-start justify-center w-full px-6 md:px-12">
           <div className="w-full md:w-1/2 flex flex-col justify-center items-start">
@@ -66,12 +67,17 @@ export default function Home() {
             <p className="text-gray-200 text-base sm:text-lg md:text-xl w-full mb-6 text-left">
               <Typewriter
                 words={["ORL-İstanbul olarak, işitme kaybınızın hayatınızı zorlaştırmasına izin vermemeyi hedef edindik. Köklü kurumsal geçmişimiz ve tecrübemizle, tüm süreçte yanınızdayız."]}
-                loop cursor cursorStyle="_" typeSpeed={20} deleteSpeed={10} delaySpeed={15000}
+                loop
+                cursor
+                cursorStyle="_"
+                typeSpeed={20}
+                deleteSpeed={10}
+                delaySpeed={15000}
               />
             </p>
-            <a href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+            <Link href="/contact" className="bg-white text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
               Bize Ulaşın
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -103,7 +109,7 @@ export default function Home() {
             {products.map((product) => (
               <div key={product.id} className="flex flex-col items-center text-center group transition-transform duration-300 hover:scale-105">
                 <div className="w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 bg-white rounded-2xl shadow-md flex items-center justify-center overflow-hidden">
-                  <img src={product.image} alt={product.name} className="w-full h-full object-contain p-2 group-hover:scale-105 transition-transform duration-300" />
+                  <Image src={product.image} alt={product.name} width={128} height={128} className="object-contain p-2 group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <p className="mt-3 text-sm sm:text-base font-medium text-gray-800 group-hover:text-sky-900 transition">
                   {product.name}
@@ -157,9 +163,9 @@ export default function Home() {
         <p className="max-w-2xl mb-6 sm:mb-8 text-sm sm:text-base">
           Merkezimizden randevu alabilir ve cihazlarımızı ücretsiz deneyebilirsiniz.
         </p>
-        <a href="/contact" className="bg-white text-sky-900 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
+        <Link href="/contact" className="bg-white text-sky-900 px-6 sm:px-8 py-2 sm:py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
           Bize Ulaşın
-        </a>
+        </Link>
       </section>
     </div>
   );

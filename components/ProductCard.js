@@ -1,13 +1,16 @@
+"use client";
+import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 export default function ProductCard({ name, image, description, logo, showButton = false, externalLink }) {
   return (
     <div className="bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-shadow p-6 flex flex-col items-center text-center group">
       <div className="w-32 h-32 md:w-64 md:h-64 mb-4 relative">
-        <img
+        <Image
           src={image}
           alt={name}
-          className="w-full h-full object-contain rounded-xl group-hover:scale-105 transition-transform"
+          fill
+          className="object-contain rounded-xl group-hover:scale-105 transition-transform"
         />
       </div>
       <h3 className="text-xl font-semibold text-sky-900 mb-2">{name}</h3>
@@ -16,15 +19,14 @@ export default function ProductCard({ name, image, description, logo, showButton
       {/* Logo ve Buton yan yana */}
       <div className="flex items-center gap-4 mb-4">
         <div className="w-48 h-24 relative">
-          <img src={logo} alt={`${name} logo`} className="object-contain w-full h-full" />
+          <Image src={logo} alt={`${name} logo`} fill className="object-contain" />
         </div>
         {externalLink && (
           <a
             href={externalLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white text-blue-700 rounded-2xl flex flex-col items-center justify-center transition transform hover:scale-110 hover:shadow-lg px-3 py-3 border border-gray-200"
-            style={{ width: "60px", height: "60px" }}
+            className="bg-white text-blue-700 rounded-2xl flex flex-col items-center justify-center transition transform hover:scale-110 hover:shadow-lg px-3 py-3 border border-gray-200 w-14 h-14"
           >
             <FaExternalLinkAlt size={18} className="mb-1" />
             <span className="text-xs font-medium">İncele</span>

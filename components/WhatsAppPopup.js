@@ -1,3 +1,4 @@
+"use client";
 import { useState, useEffect } from "react";
 import { FaWhatsapp, FaTimes } from "react-icons/fa";
 
@@ -12,7 +13,7 @@ export default function WhatsAppPopup() {
   if (!visible) return null;
 
   return (
-    <div className="fixed top-28 right-6 bg-green-600 text-white p-4 rounded-2xl shadow-xl flex items-center gap-3 max-w-xs animate-slideIn z-50">
+    <div className="fixed top-28 right-6 bg-green-600 text-white p-4 rounded-2xl shadow-xl flex items-center gap-3 max-w-xs z-50 transform transition-transform duration-500 ease-out animate-slide-in">
       <FaWhatsapp size={28} />
       <div className="flex flex-col">
         <span className="font-semibold">Bize WhatsApp'tan ulaşın!</span>
