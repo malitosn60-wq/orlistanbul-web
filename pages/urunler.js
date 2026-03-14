@@ -16,7 +16,7 @@ export default function Urunler() {
     <div className="min-h-screen bg-gray-100 text-gray-900">
       {/* HERO */}
       <div className="pt-28 px-6 md:px-12">
-        <section className="w-full h-[400px] md:h-[500px] bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#60a5fa] flex flex-col justify-center items-center rounded-3xl mb-12 shadow-xl text-center text-white">
+        <section className="w-full h-[400px] md:h-[500px] bg-gradient-to-t from-amber-200 to-[#d4af37] flex flex-col justify-center items-center rounded-3xl mb-12 shadow-xl text-center text-white">
           <h1 className="text-3xl md:text-5xl font-bold mb-4">Markalar & Ürünlerimiz</h1>
           <p className="max-w-2xl text-lg md:text-xl">
             ORL İstanbul olarak sizlere en kaliteli işitme cihazları ve markalarını sunuyoruz.
@@ -52,16 +52,17 @@ export default function Urunler() {
         </section>
       </div>
 
-      {/* CTA */}
-      <section className="py-16 flex flex-col items-center bg-gradient-to-r from-[#1e3a8a] to-[#60a5fa] text-gray-100">
-        <h2 className="text-2xl md:text-4xl font-bold mb-6 text-center">Ücretsiz Danışmanlık Alın</h2>
-        <p className="text-center max-w-2xl mb-6">
-          Merkezimizden randevu alabilir ve cihazlarımızı ücretsiz deneyebilirsiniz.
+      {/* CTA - Final Vurgusu */}
+      <section className="py-10 px-6 bg-gradient-to-t from-amber-200 to-[#d4af37] flex flex-col items-center border-t border-gray-200 text-center">
+        <div className="bg-gray-100 p-4 rounded-full mb-6">
+           <svg className="w-12 h-12 text-[#d4af37]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">Ücretsiz Danışmanlık Alın</h2>
+        <p className="text-white max-w-xl mb-10 text-lg">
+          İşitme uzmanlarımızla görüşerek size en uygun çözümü birlikte belirleyelim.
         </p>
-        <Link href="/contact">
-          <button className="bg-white text-sky-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition">
-            Bize Ulaşın
-          </button>
+        <Link href="/contact" className="bg-[#d4af37] text-white px-12 py-4 rounded-full font-bold shadow-xl hover:shadow-[#d4af37]/20 hover:scale-105 transition-all">
+          Bize Ulaşın
         </Link>
       </section>
     </div>

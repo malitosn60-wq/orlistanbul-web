@@ -13,14 +13,13 @@ export default function Footer() {
           {/* Sol taraf - Logo ve açıklama */}
           <div>
             <Image
-              src="/orl-istanbul-kartvizit.png"
+              src="/ORL_pano.png"
               alt="ORL İstanbul İşitme Cihazları Logo"
               width={128}
               height={128}
             />
             <p className="mt-3 text-gray-400 leading-relaxed">
-              İşitme cihazları ve aksesuarlarında kaliteli çözümler sunuyoruz.  
-              Sesinizi yeniden keşfedin!
+             İşitmede doğru adres.
             </p>
           </div>
 

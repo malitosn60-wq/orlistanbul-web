@@ -46,7 +46,7 @@ export default function Contact() {
       </section>
 
       {/* Hero */}
-      <section className="w-full bg-gradient-to-r from-[#0f172a] via-[#1e3a8a] to-[#60a5fa] flex flex-col justify-center items-center text-white py-16">
+      <section className="w-full bg-gradient-to-r from-amber-200 via-[#e0b939] to-[#d4af37] flex flex-col justify-center items-center text-white py-16">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">İletişim</h1>
         <p className="text-center max-w-2xl text-gray-200 text-lg md:text-xl">
           Bizimle iletişime geçin, sorularınızı yanıtlayalım ve cihazlarımızı deneyimleyin.
@@ -72,21 +72,39 @@ export default function Contact() {
           </form>
         </div>
 
-        {/* Sağ Bilgiler */}
-        <div className="md:w-1/2 bg-gradient-to-r from-sky-50 via-sky-100 to-sky-200 rounded-3xl shadow-2xl p-8 flex flex-col gap-6 justify-center">
-          <h2 className="text-3xl font-bold text-sky-900 mb-6 flex items-center gap-3">
-            <FaPhone className="text-sky-900 text-3xl" /> Bize Ulaşın
+        {/* Sağ Bilgiler - Responsive ve Ana Sayfa Ambiyansına Uygun */}
+        <div className="w-full lg:w-1/2 bg-gradient-to-tl from-amber-200 to-[#d4af37] rounded-3xl shadow-2xl p-6 sm:p-8 md:p-10 flex flex-col gap-6 justify-center transition-all duration-300">
+
+          {/* Başlık */}
+          <h2 className="text-2xl sm:text-3xl font-black text-white flex items-center gap-3 tracking-tight uppercase">
+            <FaPhone className="text-white text-2xl sm:text-3xl" /> Bize Ulaşın
           </h2>
-          <div className="flex items-center gap-4">
-            <FaPhone className="text-sky-900 text-2xl" />
-            <span className="text-gray-700 text-lg">+90 216 353 51 59</span>
-            <span className="text-gray-700 text-lg">+90 501 353 51 59</span>
+
+          {/* Ayraç */}
+          <div className="w-20 h-1.5 bg-white/40 rounded-full"></div>
+
+          {/* Telefonlar - Mobilde alt alta, tablette yan yana */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="flex items-center bg-[#0d1b33]/90 backdrop-blur-sm rounded-2xl p-4 gap-4 border border-white/10 hover:bg-[#0d1b33] transition-colors">
+              <FaPhone className="text-[#d4af37] text-xl shrink-0" />
+              <p className="text-white text-sm sm:text-base font-bold tracking-tight">+90 216 353 51 59</p>
+            </div>
+            <div className="flex items-center bg-[#0d1b33]/90 backdrop-blur-sm rounded-2xl p-4 gap-4 border border-white/10 hover:bg-[#0d1b33] transition-colors">
+              <FaPhone className="text-[#d4af37] text-xl shrink-0" />
+              <p className="text-white text-sm sm:text-base font-bold tracking-tight">+90 501 353 51 59</p>
+            </div>
           </div>
-          <div className="flex items-center gap-4">
-            <FaEnvelope className="text-sky-900 text-2xl" />
-            <span className="text-gray-700 text-lg">info@orlistanbul.com</span>
+
+          {/* E-Posta */}
+          <div className="flex items-center bg-[#0d1b33]/90 backdrop-blur-sm rounded-2xl p-4 gap-4 border border-white/10 hover:bg-[#0d1b33] transition-colors">
+            <FaEnvelope className="text-[#d4af37] text-xl shrink-0" />
+            <span className="text-white text-xs sm:text-sm md:text-base font-bold break-all">
+              orlistanbulisitmecihazlari@gmail.com
+            </span>
           </div>
-          <p className="text-gray-600 mt-4">
+
+          {/* Açıklama Metni */}
+          <p className="text-white/90 mt-2 text-sm sm:text-base leading-relaxed font-medium italic border-l-4 border-white/30 pl-4">
             Bizimle iletişime geçerek cihazlarımız hakkında detaylı bilgi alabilir,
             ücretsiz deneme randevusu oluşturabilirsiniz.
           </p>

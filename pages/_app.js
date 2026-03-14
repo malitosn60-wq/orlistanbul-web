@@ -42,7 +42,7 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="twitter:image" content="/og-preview.jpg" />
 
         {/* Favicon ve Tema */}
-        <link rel="icon" href="/favicon.ico" sizes="16x16"/>
+        <link rel="icon" href="/Orl_logo2.png" sizes="16x16"/>
         <meta name="theme-color" content="#0f172a" />
       </Head>
 
